@@ -6,7 +6,6 @@ type UserType = {
     email: string
 }
 
-
 export const UseStateExample = () => {
 
     //const [user, SetUser] = useState<UserType | null>(null)
