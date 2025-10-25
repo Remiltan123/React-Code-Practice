@@ -6,6 +6,14 @@ type PersonListProps = {
     }[]
 }
 
+// export const PersonList = ({name} : PersonListProps)=>{
+//     return(
+//         <div>
+//             {name.map((item) => <Person name={{frist: item.frist, last: item.last}}/>)}
+//         </div>
+//     )
+// }
+
 export const PersonList = (props : PersonListProps)=>{
     return(
         <div>
