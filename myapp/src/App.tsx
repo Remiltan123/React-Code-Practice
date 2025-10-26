@@ -12,6 +12,7 @@ import { Button } from './components/Button'
 import { Input } from './components/Input'
 import { StyleComponents } from './components/StyleCom'
 import { UseStateExample } from './components/UseState'
+import { Form } from './Forms/form'
 
 function App() {
 
@@ -50,10 +51,10 @@ function App() {
 
   const [count, setCount] = useState<number>(0)
 
-  const HandleClick = ()=>{
+  const HandleClick = () => {
     console.log("Button clicked")
-     setCount(prev => prev + 1)
-     console.log(count)
+    setCount(prev => prev + 1)
+    console.log(count)
   }
 
   return (
@@ -75,10 +76,12 @@ function App() {
       </Remi>
 
       <Button handleClick={() => HandleClick()} count={count}></Button>
-      <Input  handleChange={(event)=> console.log(event)}  value='Remi'/>
+      <Input handleChange={(event) => console.log(event)} value='Remi' />
 
-      <StyleComponents  styles={{'color': "red", marginTop: 30 , backgroundColor: 'white'}}/>
-      <UseStateExample/>
+      <StyleComponents styles={{ 'color': "red", marginTop: 30, backgroundColor: 'white' }} />
+      <UseStateExample />
+
+      <Form />
 
     </>
   )
